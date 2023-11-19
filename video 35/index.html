@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box:first-child {
+        background-color: blueviolet;
+      } */
+
+      /* .box::first-line{
+        color: #ff0000;
+      } */
+
+      /* .boxes * {
+        color: rgb(1, 48, 32);
+        border: 2px solid black;
+      }
+      [Mohit-data="raj"] {
+        margin-top: 50px;
+      } */
+      
+      /* .box:nth-child(odd){
+        background-color: blueviolet;
+      }
+
+      .box:nth-last-child(1){
+        background-color: aqua;
+      } */
+
+      .boxes::before{
+        content: "Hello I am Mohit";
+        background-color: aquamarine;
+        font-size: 25px;
+      }
+
+      .boxes::after{
+        content: "Hello Mohit ";
+        background-color: blueviolet;
+        font-size: 28px;
+        cursor: text;
+      }
+      .boxes{
+        content: "hello raj ";
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div Mohit-data="raj" class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+        provident molestiae natus perspiciatis accusamus recusandae impedit
+        veniam ipsum laborum, adipisci qui minus, iste ullam assumenda
+        laudantium. Optio a asperiores voluptatibus.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, laborum!
+        Sapiente ducimus, dolor numquam consequatur dolorem est asperiores nisi
+        vero quibusdam facere expedita aperiam dignissimos?
+      </div>
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum
+        quo suscipit ut beatae, distinctio natus necessitatibus in cupiditate
+        asperiores. Pariatur dignissimos voluptate dolore.
+      </div>
+    </div>
+  </body>
+</html>
